@@ -12,4 +12,5 @@ setup(
     author='Valeriia Ivanova',
     packages=find_packages(include=['DOC_analysis']),
     license="MIT",
+    download_url = 'https://github.com/IvanovaVA/DOC_analysis/archive/refs/tags/0.1.0.tar.gz',
 )
