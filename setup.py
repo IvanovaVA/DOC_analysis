@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name='DOC_analysis',
+    name='DO_analysis',
     version='0.1.0',
     description='A simple Python library for calculating Dissimilarity Overlap Curve and alpha/beta diversity',
     long_description=long_description,

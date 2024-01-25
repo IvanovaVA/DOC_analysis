@@ -2,7 +2,7 @@
 A Python library for calculating Dissimilarity Overlap Curve and alpha/beta diversity for microbiome samples
 ### Installation
 ```
-pip install DOC_analysis
+pip install DO_analysis
 ```
 
 ### Get started
