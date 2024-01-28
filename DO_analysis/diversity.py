@@ -66,7 +66,7 @@ def plot_alpha_stat(data, metadata, IDs, feature, ax, pairs=False, alfa_metric='
 def plot_diversity(data, metadata, feature, pairs=None, id_column='Sample', beta_metric="braycurtis", alfa_metric='shannon', plot_alpha=True, plot_beta=True):
 
     fig, ax = plt.subplots(plot_alpha + plot_beta) #figsize=(35, 17)
-    df_time, metadata_time, IDs = select_data_metadata(data, metadata)
+    df_time, metadata_time, IDs = select_data_metadata(data, metadata, id_column)
     if plot_alpha:
         plot_alpha_stat(df_time, metadata_time, IDs, feature, ax[0], pairs, meta_col=id_column, alfa_metric=alfa_metric)
 

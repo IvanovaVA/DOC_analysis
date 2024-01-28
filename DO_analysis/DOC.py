@@ -107,7 +107,7 @@ def lowess_with_confidence_bounds(x, y, Subj1, Subj2, N=10, frac=0.2, conf_inter
 
         data = pd.DataFrame({'Subj1': Subj1_sampled, 'Subj2': Subj2_sampled, 'Overlap': Overlap, 'RootJSD': RootJSD})
         md = smf.mixedlm("RootJSD ~ 1 + Overlap", data, groups=data["Subj1"])
-        mdf = md.fit(method=["lbfgs"])
+        mdf = md.fit(method=["powell", "lbfgs"])
 
         p_lme[i] = mdf.params['Overlap']
 
